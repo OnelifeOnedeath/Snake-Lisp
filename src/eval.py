@@ -4,6 +4,9 @@ Snake-Lisp Evaluator 🐍
 Интерпретатор - выполняет AST и возвращает результат
 """
 
+# ИМПОРТЫ AST КЛАССОВ
+from parser import NumberNode, SymbolNode, ListNode, StringNode
+
 class Environment:
     """Окружение - хранит переменные и функции"""
     def __init__(self, parent=None):
@@ -110,7 +113,7 @@ def setup_global_env(env):
 # Тестируем весь пайплайн!
 if __name__ == "__main__":
     from lexer import Lexer
-    from parser import Parser, NumberNode, SymbolNode, ListNode, StringNode
+    from parser import Parser
     
     code = """
     (+ 1 2 3)
