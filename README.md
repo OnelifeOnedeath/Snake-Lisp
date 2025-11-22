@@ -13,5 +13,5 @@
 ## 📦 Установка
 
 ```bash
-git clone https://github.com/yourusername/Snake-Lisp
+git clone https://github.com/OnelifeOnedeath/Snake-Lisp
 cd Snake-Lisp
